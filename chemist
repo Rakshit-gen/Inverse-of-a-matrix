@@ -1,0 +1,14 @@
+print('molarity,molality,mole fraction finder')
+m=float(input('enter mass'))
+d=float(input('enter density'))
+M=int(input('enter molar mass'))
+mas=int(input('enter mass of solvent'))
+n=m/M
+print(n)
+molar=n*d*1000/(mas+m)
+print('molarity',molar)
+molal=n*1000/mas
+print('molality',molal)
+na=mas/18
+molef=n/(na+n)
+print('mole fraction',molef)
